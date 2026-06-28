@@ -30,16 +30,17 @@ window.BUSINESS = {
     Sunday: "Closed",
   },
 
-  // --- Services (verified: FedEx Authorized ShipCenter + USPS) ---
+  // --- Services (verified from the owner's own description) ---
   services: [
-    { icon: "ship",    title: "Shipping",          desc: "FedEx Authorized ShipCenter & USPS — domestic and international." },
-    { icon: "box",     title: "Packing & Boxes",   desc: "Boxes, packing supplies & custom packing for fragile items." },
-    { icon: "print",   title: "Printing & Copies", desc: "Digital printing, color/B&W copies, blueprints & business cards." },
-    { icon: "notary",  title: "Free Notary",       desc: "Free notary public services — no appointment needed." },
-    { icon: "mailbox", title: "Mailbox Rental",    desc: "Private mailbox rental with package acceptance." },
-    { icon: "fax",     title: "Fax & Scanning",    desc: "Send/receive faxes; scan documents to disk or email." },
-    { icon: "stamp",   title: "Lamination",        desc: "Document & sign laminating in a range of sizes." },
-    { icon: "passport",title: "Shredding",         desc: "Secure on-site document shredding services." },
+    { icon: "ship",    title: "Shipping",            desc: "FedEx Authorized ShipCenter & USPS. Prelabeled UPS Ground drop-off too." },
+    { icon: "box",     title: "Packing & Custom Boxes", desc: "We box your items, or build a custom-sized box on-site with our box builder." },
+    { icon: "print",   title: "Printing & Copies",   desc: "Color/B&W copies, business cards, invitations, flyers & posters." },
+    { icon: "banner",  title: "Banners & Blueprints", desc: "Wide-format printing up to 24\" banners, plus blueprint copies." },
+    { icon: "notary",  title: "Free Notary",         desc: "Free notary public services — no appointment needed." },
+    { icon: "mailbox", title: "Mailbox Rental",      desc: "Private mailbox rental with package acceptance." },
+    { icon: "card",    title: "Lamination",          desc: "Laminating from wallet-size cards to large documents." },
+    { icon: "fax",     title: "Fax & Scanning",      desc: "Send/receive faxes; scan documents to disk or email." },
+    { icon: "gift",    title: "Gift Shop",           desc: "A gift shop full of unique, reasonably priced finds." },
   ],
 
   // --- Social (leave "" to hide) ---

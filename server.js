@@ -44,9 +44,12 @@ const server = http.createServer((req, res) => {
       return;
     }
     const ext = path.extname(filePath).toLowerCase();
+    // Editable text/content files: always revalidate so updates show immediately.
+    // Binary assets (images, fonts): cache for a day.
+    const noCache = [".html", ".js", ".json", ".css", ".xml", ".txt"].indexOf(ext) !== -1;
     res.writeHead(200, {
       "Content-Type": MIME[ext] || "application/octet-stream",
-      "Cache-Control": ext === ".html" ? "no-cache" : "public, max-age=3600",
+      "Cache-Control": noCache ? "no-cache" : "public, max-age=86400",
     });
     res.end(data);
   });
