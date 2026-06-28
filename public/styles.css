@@ -72,6 +72,20 @@ img { max-width: 100%; }
 .btn-phone { margin-left: 4px; }
 .nav-toggle { display: none; }
 
+/* ===== Track-a-shipment strip ===== */
+.track-bar { background: var(--bg-tint); border-bottom: 1px solid var(--line); font-size: .9rem; }
+.track-bar-inner { display: flex; align-items: center; gap: 18px; padding: 9px 0; }
+.track-label { color: var(--body); font-weight: 600; }
+.track-bar a {
+  display: inline-flex; align-items: center; gap: 5px;
+  color: var(--navy); font-weight: 700;
+}
+.track-bar a:hover { color: var(--navy-dark); text-decoration: underline; }
+.track-bar a svg { width: 13px; height: 13px; }
+@media (max-width: 640px) {
+  .track-bar-inner { justify-content: center; gap: 16px; padding: 8px 0; font-size: .85rem; }
+}
+
 /* ===== Hero ===== */
 .hero {
   background:
