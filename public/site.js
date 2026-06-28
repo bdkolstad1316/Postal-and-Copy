@@ -97,6 +97,25 @@
       "&output=embed";
   }
 
+  // Mobile nav toggle (hamburger)
+  var navToggle = document.querySelector(".nav-toggle");
+  var primaryNav = document.getElementById("primary-nav");
+  if (navToggle && primaryNav) {
+    navToggle.addEventListener("click", function () {
+      var open = primaryNav.classList.toggle("nav--open");
+      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+    // Close the menu after tapping a link.
+    primaryNav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A") {
+        primaryNav.classList.remove("nav--open");
+        navToggle.setAttribute("aria-expanded", "false");
+        navToggle.setAttribute("aria-label", "Open menu");
+      }
+    });
+  }
+
   // Footer year + social
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
