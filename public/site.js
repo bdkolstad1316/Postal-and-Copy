@@ -97,6 +97,37 @@
       "&output=embed";
   }
 
+  // Featured gifts section (gated by config.gifts.enabled; section + nav link are
+  // hidden in the markup by default and revealed only when enabled).
+  var G = B.gifts;
+  if (G && G.enabled) {
+    var giftsSec = document.getElementById("gifts");
+    if (giftsSec) giftsSec.removeAttribute("hidden");
+    var giftsNav = document.querySelector('#primary-nav a[href="#gifts"]');
+    if (giftsNav) giftsNav.removeAttribute("hidden");
+    setText("giftsHeading", G.heading);
+    setText("giftsBlurb", G.blurb);
+    var chips = document.getElementById("gifts-chips");
+    if (chips && Array.isArray(G.categories)) {
+      chips.innerHTML = G.categories.map(function (c) {
+        return '<li class="gift-chip">' + c + "</li>";
+      }).join("");
+    }
+    var gd = document.getElementById("gifts-directions");
+    if (gd) { gd.setAttribute("href", mapsUrl); if (G.cta) gd.textContent = G.cta; }
+    var gc = document.getElementById("gifts-call");
+    if (gc) gc.setAttribute("href", telHref);
+    // Photo-ready: when real photos are added to config, render a gallery above the chips.
+    if (chips && Array.isArray(G.photos) && G.photos.length) {
+      var gallery = document.createElement("div");
+      gallery.className = "gifts-gallery";
+      gallery.innerHTML = G.photos.map(function (p) {
+        return '<img loading="lazy" src="' + p.src + '" alt="' + (p.alt || "") + '" />';
+      }).join("");
+      chips.parentNode.insertBefore(gallery, chips);
+    }
+  }
+
   // Mobile nav toggle (hamburger)
   var navToggle = document.querySelector(".nav-toggle");
   var primaryNav = document.getElementById("primary-nav");

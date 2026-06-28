@@ -40,8 +40,18 @@ window.BUSINESS = {
     { icon: "mailbox", title: "Mailbox Rental",      desc: "Private mailbox rental with package acceptance." },
     { icon: "card",    title: "Lamination",          desc: "Laminating from wallet-size cards to large documents." },
     { icon: "fax",     title: "Fax & Scanning",      desc: "Send/receive faxes; scan documents to disk or email." },
-    { icon: "gift",    title: "Gift Shop",           desc: "A gift shop full of unique, reasonably priced finds." },
   ],
+
+  // --- Featured gifts (showcase, not e-commerce) ---
+  gifts: {
+    enabled: false, // flip to true after Vince confirms categories/photos (meeting Tue 6/30)
+    heading: "More than shipping — a gift shop worth the stop",
+    blurb: "Browse a full selection of unique, reasonably priced gifts while you're in — perfect for birthdays, holidays, and last-minute occasions.",
+    // EDIT: replace with the owner's real categories (these are placeholders).
+    categories: ["Greeting Cards", "Candles & Home", "Local & Handmade", "Toys & Novelties", "Jewelry & Accessories", "Seasonal & Holiday"],
+    cta: "Come browse in store",
+    photos: [], // later: [{ src: "/gifts/x.webp", alt: "..." }] renders a gallery
+  },
 
   // --- Social (leave "" to hide) ---
   social: {

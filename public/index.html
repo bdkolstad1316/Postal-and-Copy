@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Postal &amp; Copy + | Shipping, Printing &amp; Notary in Clarkston, WA</title>
-  <meta name="description" content="Postal &amp; Copy + (Postal and Copy Plus) in Clarkston, WA — FedEx Authorized ShipCenter & USPS shipping, printing & copies, free notary, mailbox rental, laminating, faxing and shredding. 601 3rd St, (509) 758-0234." />
+  <meta name="description" content="Postal &amp; Copy + (Postal and Copy Plus) in Clarkston, WA — FedEx Authorized ShipCenter & USPS shipping, printing & copies, free notary, mailbox rental, laminating, faxing and a gift shop of unique finds. 601 3rd St, (509) 758-0234." />
   <meta name="theme-color" content="#1c4e80" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
@@ -33,6 +33,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-djUAih_B6CDGVBcxh2ygr.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,6 +53,7 @@
       </a>
       <nav class="nav" id="primary-nav" aria-label="Primary">
         <a href="#services">Services</a>
+        <a href="#gifts" hidden>Gifts</a>
         <a href="#hours">Hours &amp; Location</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
@@ -93,6 +101,19 @@
         <h2 class="section-title">Everything you need, under one roof</h2>
         <p class="section-sub">From shipping a package to getting a document notarized, we’ve got you covered.</p>
         <div class="grid services-grid" id="services-grid"><!-- filled by site.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== Featured Gifts ===== -->
+    <section class="section gifts" id="gifts" hidden>
+      <div class="container">
+        <h2 class="section-title" data-field="giftsHeading">A gift shop worth the stop</h2>
+        <p class="section-sub" data-field="giftsBlurb"></p>
+        <ul class="gift-chips" id="gifts-chips"><!-- filled by site.js --></ul>
+        <div class="gifts-cta">
+          <a class="btn btn-primary" id="gifts-directions" target="_blank" rel="noopener" href="#">Come browse in store</a>
+          <a class="btn btn-ghost" id="gifts-call" href="#">Call us</a>
+        </div>
       </div>
     </section>
 
@@ -167,7 +188,7 @@
   <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> <span data-field="name">Postal and Copy Plus</span>. All rights reserved.</p>
+      <p>&copy; <span id="year">2026</span> <span data-field="name">Postal and Copy Plus</span>. All rights reserved. &middot; <a class="footer-link" href="/privacy.html">Privacy Policy</a></p>
       <nav class="footer-social" id="footer-social" aria-label="Social media"></nav>
       <p class="footer-credit">Site by <a href="https://www.kd70.com/" target="_blank" rel="nofollow noopener">KD70</a></p>
     </div>
