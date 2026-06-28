@@ -116,6 +116,20 @@
     });
   }
 
+  // Logo click returns to top (header is sticky, so #top hash-nav is unreliable)
+  var brand = document.querySelector(".brand");
+  if (brand) {
+    brand.addEventListener("click", function (e) {
+      e.preventDefault();
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+      if (primaryNav) {
+        primaryNav.classList.remove("nav--open");
+        if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
   // Footer year + social
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
