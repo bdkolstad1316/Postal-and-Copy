@@ -5,7 +5,7 @@
    ============================================================= */
 window.BUSINESS = {
   name: "Postal & Copy +",
-  tagline: "Pack. Ship. Print. Notarize. All in one place — in Clarkston, WA.",
+  tagline: "Pack. Ship. Print. Notarize. All in one place — in Clarkston, WA.",
 
   // --- Contact ---
   phone: "(509) 758-0234",
