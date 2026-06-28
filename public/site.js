@@ -42,8 +42,17 @@
 
   // Links
   ["phoneLink", "phoneLink2", "phoneLink3"].forEach(function (f) { setHref(f, telHref); });
-  ["emailLink", "emailLink2"].forEach(function (f) { setHref(f, mailHref); });
   ["directions", "directions2"].forEach(function (f) { setHref(f, mapsUrl); });
+
+  // Email is optional — wire it up if present, otherwise remove the email UI.
+  if (B.email) {
+    ["emailLink", "emailLink2"].forEach(function (f) { setHref(f, mailHref); });
+  } else {
+    ["email-line", "email-card"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.remove();
+    });
+  }
   // Visible phone text inside the header/contact phone links
   document.querySelectorAll('[data-field="phoneLink"]').forEach(function (el) {
     if (el.classList.contains("btn-phone")) el.textContent = B.phone || "Call Us";
@@ -117,6 +126,7 @@
       return { "@type": "OpeningHoursSpecification", dayOfWeek: day, opens: parts[0], closes: parts[1] };
     }).filter(Boolean),
   };
+  if (!schema.email) delete schema.email;
   var ld = document.createElement("script");
   ld.type = "application/ld+json";
   ld.textContent = JSON.stringify(schema);

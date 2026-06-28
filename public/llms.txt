@@ -1,23 +1,30 @@
-# Postal and Copy Plus
+# Postal & Copy + (Postal and Copy Plus)
 
-> A locally owned pack-and-ship, printing, and business-services center.
-> Pack. Ship. Print. Notarize. All in one place.
+> A locally owned pack-and-ship, printing, and business-services center in
+> Clarkston, WA, serving the Lewiston–Clarkston Valley. FedEx Authorized
+> ShipCenter and USPS-contracted location.
 
 ## Services
-- Shipping with USPS, UPS, FedEx, and DHL (domestic & international)
-- Packing supplies and custom packing for fragile items
-- Printing & copies (color/B&W), banners, binding, lamination
-- Notary Public (on-site, no appointment needed)
+- Shipping: FedEx Authorized ShipCenter & USPS (domestic & international)
+- Packing supplies, boxes, and custom packing for fragile items
+- Printing & copies: digital printing, color/B&W, blueprints, business cards
+- Free notary public (no appointment needed)
 - Private mailbox rental with package acceptance
-- Passport & ID photos
-- Fax & document scanning
-- Stamps, postage, and money orders
+- Fax & document scanning (to disk or email)
+- Lamination
+- Secure document shredding
+- Photo restoration, announcements, and memorials
 
 ## Contact
 - Website: https://www.postalandcopyplus.com/
-- Phone: «(000) 000-0000»  <!-- update in /config.js -->
-- Address: «123 Main Street, City, ST 00000»  <!-- update in /config.js -->
+- Phone: (509) 758-0234
+- Address: 601 3rd Street, Clarkston, WA 99403
+
+## Hours
+- Monday–Thursday: 8:00 AM – 6:30 PM
+- Friday: 8:00 AM – 4:00 PM
+- Saturday & Sunday: Closed
 
 ## Notes
-This site is a single-page storefront. All business details (hours, address,
-phone, services) are maintained in /config.js as the single source of truth.
+Single-page storefront site. All business details (hours, address, phone,
+services) are maintained in /config.js as the single source of truth.
