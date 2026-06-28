@@ -1,0 +1,12 @@
+{
+  "name": "postalandcopyplus",
+  "version": "1.0.0",
+  "description": "Postal and Copy Plus — pack, ship, print & notary storefront website",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
