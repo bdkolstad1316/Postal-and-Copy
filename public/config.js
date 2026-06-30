@@ -36,7 +36,7 @@ window.BUSINESS = {
     { icon: "box",     title: "Packing & Custom Boxes", desc: "We box your items, or build a custom-sized box on-site with our box builder." },
     { icon: "print",   title: "Printing & Copies",   desc: "Color/B&W copies, business cards, invitations, flyers & posters." },
     { icon: "banner",  title: "Banners & Blueprints", desc: "Wide-format printing up to 24\" banners, plus blueprint copies." },
-    { icon: "notary",  title: "Free Notary",         desc: "Free notary public services — no appointment needed." },
+    { icon: "notary",  title: "Notary",              desc: "Notary public services available in-store." },
     { icon: "mailbox", title: "Mailbox Rental",      desc: "Private mailbox rental with package acceptance." },
     { icon: "card",    title: "Lamination",          desc: "Laminating from wallet-size cards to large documents." },
     { icon: "fax",     title: "Fax & Scanning",      desc: "Send/receive faxes; scan documents to disk or email." },
@@ -44,13 +44,21 @@ window.BUSINESS = {
 
   // --- Featured gifts (showcase, not e-commerce) ---
   gifts: {
-    enabled: false, // flip to true after Vince confirms categories/photos (meeting Tue 6/30)
+    enabled: true,
     heading: "More than shipping — a gift shop worth the stop",
-    blurb: "Browse a full selection of unique, reasonably priced gifts while you're in — perfect for birthdays, holidays, and last-minute occasions.",
-    // EDIT: replace with the owner's real categories (these are placeholders).
-    categories: ["Greeting Cards", "Candles & Home", "Local & Handmade", "Toys & Novelties", "Jewelry & Accessories", "Seasonal & Holiday"],
+    blurb: "Browse a full selection of unique, reasonably priced gifts — local honey, crystals, greeting cards, journals, toys and more — perfect for birthdays, holidays, and last-minute occasions.",
+    categories: ["Greeting Cards", "Local Honey & Goods", "Crystals & Gemstones", "Toys, Models & Puzzles", "Journals & Stationery", "Garden & Home Décor"],
     cta: "Come browse in store",
-    photos: [], // later: [{ src: "/gifts/x.webp", alt: "..." }] renders a gallery
+    photos: [
+      { src: "/gifts/crystals.jpg",  alt: "Colorful polished tumbled gemstones" },
+      { src: "/gifts/honey.jpg",     alt: "Local raw wildflower honey from Waller Apiary, Clarkston WA" },
+      { src: "/gifts/cards.jpg",     alt: "Greeting card displays at the gift shop" },
+      { src: "/gifts/postcards.jpg", alt: "Local scenic postcards — Hells Canyon, Clarkston and Asotin" },
+      { src: "/gifts/journals.jpg",  alt: "Journals and notebooks" },
+      { src: "/gifts/models.jpg",    alt: "Metal Earth model kits, mugs and puzzles" },
+      { src: "/gifts/garden.jpg",    alt: "Garden stakes and home décor gifts" },
+      { src: "/gifts/shop.jpg",      alt: "Inside the Postal & Copy + gift shop" },
+    ],
   },
 
   // --- Social (leave "" to hide) ---
