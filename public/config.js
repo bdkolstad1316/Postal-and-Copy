@@ -42,6 +42,13 @@ window.BUSINESS = {
     { icon: "fax",     title: "Fax & Scanning",      desc: "Send/receive faxes; scan documents to disk or email." },
   ],
 
+  // --- Real photos shown under the services grid ---
+  servicePhotos: [
+    { src: "/services/printing.jpg",  alt: "Digital printing and copy center at Postal & Copy +", caption: "Printing & copy center" },
+    { src: "/services/packing.jpg",   alt: "Packing supplies, boxes and mailers",                  caption: "Packing supplies & boxes" },
+    { src: "/services/mailboxes.jpg", alt: "Wall of private rental mailboxes",                      caption: "Private mailbox rental" },
+  ],
+
   // --- Featured gifts (showcase, not e-commerce) ---
   gifts: {
     enabled: true,

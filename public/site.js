@@ -97,6 +97,16 @@
       "&output=embed";
   }
 
+  // Real shop photos under the services grid
+  var sp = document.getElementById("service-photos");
+  if (sp && Array.isArray(B.servicePhotos)) {
+    sp.innerHTML = B.servicePhotos.map(function (p) {
+      return '<figure class="service-photo">' +
+        '<img loading="lazy" src="' + p.src + '" alt="' + (p.alt || "") + '" />' +
+        '<figcaption>' + (p.caption || "") + "</figcaption></figure>";
+    }).join("");
+  }
+
   // Featured gifts section (gated by config.gifts.enabled; section + nav link are
   // hidden in the markup by default and revealed only when enabled).
   var G = B.gifts;
